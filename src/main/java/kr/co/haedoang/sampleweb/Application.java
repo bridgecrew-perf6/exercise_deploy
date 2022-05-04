@@ -17,7 +17,7 @@ public class Application {
 
     @GetMapping
     public String index() {
-        return "hello, this mode is " + env.getProperty("mode");
+        return "hello \uD83D\uDE00, this mode is " + env.getProperty("mode");
     }
 
 
