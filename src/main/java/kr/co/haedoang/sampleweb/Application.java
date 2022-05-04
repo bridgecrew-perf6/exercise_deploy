@@ -20,9 +20,7 @@ public class Application {
         return "hello \uD83D\uDE00, this mode is " + env.getProperty("mode");
     }
 
-
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
 }
