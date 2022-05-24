@@ -20,6 +20,11 @@ public class Application {
         return "hello \uD83D\uDE00, this mode is " + env.getProperty("mode");
     }
 
+    @GetMapping("api/v1/port")
+    public String port() {
+        return "this application is running on " + env.getProperty("local.server.port") + "port";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
